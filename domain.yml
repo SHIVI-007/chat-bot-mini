@@ -1,0 +1,778 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+#--------------------------Main menu section -------------------------------------
+  - APPLY
+  - COURSES
+  - OPEN_DAYS
+  - CONTACT_US
+  - EVENTS
+# -------------------------$$$$$$$$$$$$$$$$$---------------------------------------
+
+# ---------------------------How to apply section ----------------------------------
+  - MASTER_LINK
+  - PHD_LINK
+  - INTEGRATED_LINK 
+# --------------------------$$$$$$$$$$$$$$$$$$$$$$$$---------------------------------
+
+# -------------------------Courses offered section ----------------------------------
+  - MASTER_COURSES
+  - PHD_COURSES
+#--------------------------$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------
+
+#--------------------------Sub - COURSES OFFER SECTION (Department/MASTER)----------------------
+  - SBSTL
+  - DOMS
+  - DOC
+  - DOEC
+  - DOTS
+  - DOBT
+  - DOIS
+  - DOMS-K
+  - DOC-K
+  - DOM
+  - DOS
+  - ECACS
+  - DOP
+  - DOCH
+  - DOES
+  - DOAP
+  - DOCDM
+  - DOBMB
+  - DOB
+  - DOEn
+  - DOF
+  - DOH
+  - DOSa
+  - DOPh
+  - DOPES
+  - DOFL
+  - DOA
+  - DOSo
+  - DOHi
+  - DOPIS
+  - DOSW
+  - DOWS
+  - UMISARC
+  - COSEI
+  - CFES
+  - CFMS
+  - DOCS
+  - DOEE
+  - DOCS-K
+  - COPCE
+  - SOE
+  - CFACE
+  - DOPA
+  - SOL
+  - DOLIS
+  - DOEMMC
+  - DOGET
+  - DONST
+  - UGC
+  - DOM-PB
+  - LC
+
+# -------------------------------------- $$$$$$$$$$$$$$$$$ ------------------------------------------------
+
+# ---------------------------------------Sub - COURSES OFFER SECTION (Department)--------------------------
+  - SBSTL_P
+  - DOMS_P
+  - DOC_P
+  - DOEC_P
+  - DOTS_P
+  - DOBT_P
+  - DOIS_P
+  - DOMS-K_P
+  - DOC-K_P
+  - DOM_P
+  - DOS_P
+  - ECACS_P
+  - DOP_P
+  - DOCH_P
+  - DOES_P
+  - DOAP_P
+  - DOCDM_P
+  - DOBMB_P
+  - DOB_P
+  - DOEn_P
+  - DOF_P
+  - DOH_P
+  - DOSa_P
+  - DOPh_P
+  - DOPES_P
+  - DOFL_P
+  - DOA_P
+  - DOSo_P
+  - DOHi_P
+  - DOPIS_P
+  - DOSW_P
+  - DOWS_P
+  - UMISARC_P
+  - COSEI_P
+  - CFES_P
+  - CFMS_P
+  - DOCS_P
+  - DOEE_P
+  - DOCS-K_P
+  - COPCE_P
+  - SOE_P
+  - CFACE_P
+  - DOPA_P
+  - SOL_P
+  - DOLIS_P
+  - DOEMMC_P
+  - DOGET_P
+  - DONST_P
+  - UGC_P
+  - DOM-PB_P
+  - LC_P
+
+
+
+
+# ---------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------------
+
+
+
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+# ----------------------------this is the menu section for the website :-----------------------------
+
+  utter_response1:
+  - text : "How can i help you ?"
+    buttons :
+      - title : "How to apply ?"
+        payload: /APPLY
+      - title : "Courses "
+        payload: /COURSES
+      - title : "Open days"
+        payload: /OPEN_DAYS
+      - title : "Contact us"
+        payload: /CONTACT_US
+      - title : "Events in university"
+        payload: /EVENTS
+  
+  # ---------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-----------------------------------
+
+  # ---------------------------HOW TO APPLY SECTION --------------------------------------------------
+
+  utter_response1.1:
+  - text : "Chouse your course type ? "
+    buttons: 
+      - title : "Master course Admission"
+        payload: /MASTER_LINK
+      - title : "PHD course Admission"
+        payload: /PHD_LINK
+      - title : " Integrated course Admission"
+        payload: /INTEGRATED_LINK 
+
+  # -------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------
+
+  # ------------------------------- COURSES OFFER SECTION ---------------------------------------------
+
+  utter_response1.2:
+  - text : "Chouse the courses offered ? "
+    buttons:
+      - title : "Master courses "
+        payload: /MASTER_COURSES
+      - title : "PHD courses"
+        payload: /PHD_COURSES
+
+ 
+
+  #---------------------------------%%%%%%%%%%%%%%%%%%%%%----------------------------------------------
+
+  # ---------------------------------Sub - COURSES OFFER SECTION (Department/MASTER)--------------------------
+
+  utter_response1.2.1:
+  - text : " Chouse the department ?"
+    buttons: 
+      - title : "Subramania Bharthi school of tamil language & Literature "
+        payload: "/SBSTL"
+      - title : "Department of Managment studies  "
+        payload: "/DOMS"
+      - title : "Department of Commerce "
+        payload: "/DOC"
+      - title : "Department of Economics "
+        payload: "/DOEC"
+      - title : "Department of Tourism studies "
+        payload: "/DOTS"
+      - title : "Department of Banking technology "
+        payload: "/DOBT"
+      - title : "Department of International studies "
+        payload: "/DOIS"
+      - title : "Department of Managment studies - Karikal "
+        payload: "/DOMS-K"
+      - title : "Department of Commerce - Karikal"
+        payload: "DOC-K"
+      - title : "Department of Mathematics "
+        payload: "/DOM"
+      - title : "Deparment of Statistics"
+        payload: "/DOS"
+      - title : "Escande chair in Asian christian studies "
+        payload: "/ECACS"
+      - title : "Department of Physics "
+        payload: "/DOP"
+      - title : "Department of Chemistry "
+        payload: "/DOCH"
+      - title : "Department of Earth science"
+        payload: "/DOES"
+      - title : "Department of Applied psychology "
+        payload: "/DOAP"
+      - title : "Department of Costal disaster managment "
+        payload: "/DOCDM"
+      - title : "Department of Bioshemistry and molecular biology "
+        payload: "/DOBMB"
+      - title : "Department of Biotechnology "
+        payload: "/DOB"
+      - title : "Department of English "
+        payload: "/DOEn"
+      - title : "Department of French "
+        payload: "/DOF"
+      - title : "Department of HINDI "
+        payload: "/DOHi"
+      - title : "Department of Sanskrit "
+        payload: "/DOSa"
+      - title : "Department of Philosophy "
+        payload: "/DOPh"
+      - title : "Department of Physical education and sports"
+        payload: "/DOPES"
+      - title : "Center of Foreign language"
+        payload: "/COFL"
+      - title : "Department of Anthropology"
+        payload: "/DOA"
+      - title : "Department of Sociology"
+        payload: "/DOSo"
+      - title : "Department of History"
+        payload: "/DOH"
+      - title : "Department of Politics and international studies"
+        payload: "/DOPIS"
+      - title : "Department of Social work"
+        payload: "/DOSW"
+      - title : "Department of Women's studies"
+        payload: "/DOWS"
+      - title : "Center of South Asian studies"
+        payload: "/UMISARC"
+      - title : "Center for study of Social exclusion & inclusive policy"
+        payload: "/COSEI"
+      - title : "Center for European studies"
+        payload: "/CFES"
+      - title : "Center of Marintime studies"
+        payload: "/CFMS"
+      - title : "Department of Computer science"
+        payload: "/DOCS"
+      - title : "Department of Electronic engineering"
+        payload: "/DOEE"
+      - title : "Department of Computer science - Karikal"
+        payload: "/DOCS-k"
+      - title : "Center of pollution control and Enviormental engineering"
+        payload: "/COPCE"
+      - title : "School of Education"
+        payload: "/SOE"
+      - title : "Center for Adult and Continuing Education"
+        payload: "/CFACE"
+      - title : "Department of Performing Arts"
+        payload: "/DOPA"
+      - title : "School of Law"
+        payload: "/SOL"
+      - title : "Department of Library and information science"
+        payload: "/DOLIS"
+      - title : "Department of Electronic media and mass communication"
+        payload: "/DOEMMC"
+      - title : "Department of Green energy and technology"
+        payload: "/DOGET"
+      - title : "Center for Nano science & technology"
+        payload: "/DONST"
+      - title : "Human resource devlopment center"
+        payload: "/UGC"
+      - title : "Department of Managment studies Port blair campus "
+        payload: "DOM-PB"
+      - title : "Laskhadweep campus"
+        payload: "/LC"
+
+ 
+
+  # -------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%----------------------------
+
+
+# -------------------------------- Sub (UTTER) - COURSES OFFER SECTION (Department/MASTER)-----------------
+  utter_response1.2.1.1:
+  - text : "M.A. Tamil link is [website] {https://www.pondiuni.edu.in/programs/m-a-tamil/}"
+  
+  utter_response1.2.1.2:
+  - text : "M.B.A. Master of Business Administration link is [website] {https://www.pondiuni.edu.in/programs/master-of-business-administration-m-b-a/}"
+  - text : "M.B.A. Part–Time (Self Financing) link is [website] {https://www.pondiuni.edu.in/programs/m-b-a-part-time-self-financing/}"
+  - text : "M.B.A. Data Analytics (Self Financing) link is [website] {https://www.pondiuni.edu.in/programs/m-b-a-data-analytics-self-financing/}"
+
+
+  utter_response1.2.1.3:
+  - text : ""
+
+  utter_response1.2.1.4:
+  - text : ""
+  
+  utter_response1.2.1.5:
+  - text : ""
+
+  utter_response1.2.1.6:
+  - text : ""
+
+  utter_response1.2.1.7:
+  - text : ""
+  
+  utter_response1.2.1.8:
+  - text : ""
+
+  utter_response1.2.1.9:
+  - text : ""
+
+  utter_response1.2.1.10:
+  - text : ""
+
+  utter_response1.2.1.11:
+  - text : ""
+  
+  utter_response1.2.1.12:
+  - text : ""
+
+  utter_response1.2.1.13:
+  - text : ""
+
+  utter_response1.2.1.14:
+  - text : ""
+  
+  utter_response1.2.1.15:
+  - text : ""
+
+  utter_response1.2.1.16:
+  - text : ""
+
+  utter_response1.2.1.17:
+  - text : ""
+
+  utter_response1.2.1.18:
+  - text : ""
+  
+  utter_response1.2.1.19:
+  - text : ""
+
+  utter_response1.2.1.20:
+  - text : ""
+
+  utter_response1.2.1.21:
+  - text : ""
+  
+  utter_response1.2.1.22:
+  - text : ""
+
+  utter_response1.2.1.23:
+  - text : ""
+
+  utter_response1.2.1.24:
+  - text : ""
+
+  utter_response1.2.1.25:
+  - text : ""
+  
+  utter_response1.2.1.26:
+  - text : ""
+
+  utter_response1.2.1.27:
+  - text : ""
+
+  utter_response1.2.1.28:
+  - text : ""
+  
+  utter_response1.2.1.29:
+  - text : ""
+
+  utter_response1.2.1.30:
+  - text : ""
+
+  utter_response1.2.1.31:
+  - text : ""
+
+  utter_response1.2.1.32:
+  - text : ""
+  
+  utter_response1.2.1.33:
+  - text : ""
+
+  utter_response1.2.1.34:
+  - text : ""
+
+  utter_response1.2.1.35:
+  - text : ""
+  
+  utter_response1.2.1.36:
+  - text : ""
+
+  utter_response1.2.1.37:
+  - text : ""
+
+  utter_response1.2.1.38:
+  - text : ""
+
+  utter_response1.2.1.39:
+  - text : ""
+  
+  utter_response1.2.1.40:
+  - text : ""
+
+  utter_response1.2.1.41:
+  - text : ""
+
+  utter_response1.2.1.42:
+  - text : ""
+  
+  utter_response1.2.1.43:
+  - text : ""
+
+  utter_response1.2.1.44:
+  - text : ""
+
+  utter_response1.2.1.45:
+  - text : ""
+
+  utter_response1.2.1.46:
+  - text : ""
+  
+  utter_response1.2.1.47:
+  - text : ""
+
+  utter_response1.2.1.48:
+  - text : ""
+
+  utter_response1.2.1.49:
+  - text : ""
+  
+  utter_response1.2.1.50:
+  - text : ""
+
+  utter_response1.2.1.51:
+  - text : ""
+
+  # -----------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------
+  
+    
+  # ----------------------------- Sub - COURSES OFFER SECTION (Department/PHD)---------------------
+  utter_response1.2.2:
+  - text : " Chouse the department ?"
+    buttons: 
+      - title : "Subramania Bharthi school of tamil language & Literature "
+        payload: "/SBSTL_P"
+      - title : "Department of Managment studies  "
+        payload: "/DOMS_P"
+      - title : "Department of Commerce "
+        payload: "/DOC_P"
+      - title : "Department of Economics "
+        payload: "/DOEC_P"
+      - title : "Department of Tourism studies "
+        payload: "/DOTS_P"
+      - title : "Department of Banking technology "
+        payload: "/DOBT_P"
+      - title : "Department of International studies "
+        payload: "/DOIS_P"
+      - title : "Department of Managment studies - Karikal "
+        payload: "/DOMS-K_P"
+      - title : "Department of Commerce - Karikal"
+        payload: "DOC-K_P"
+      - title : "Department of Mathematics "
+        payload: "/DOM_P"
+      - title : "Deparment of Statistics"
+        payload: "/DOS_P"
+      - title : "Escande chair in Asian christian studies "
+        payload: "/ECACS_P"
+      - title : "Department of Physics "
+        payload: "/DOP_P"
+      - title : "Department of Chemistry "
+        payload: "/DOCH_P"
+      - title : "Department of Earth science"
+        payload: "/DOES_P"
+      - title : "Department of Applied psychology "
+        payload: "/DOAP_P"
+      - title : "Department of Costal disaster managment "
+        payload: "/DOCDM_P"
+      - title : "Department of Bioshemistry and molecular biology "
+        payload: "/DOBMB_P"
+      - title : "Department of Biotechnology "
+        payload: "/DOB_P"
+      - title : "Department of English "
+        payload: "/DOEn_P"
+      - title : "Department of French "
+        payload: "/DOF_P"
+      - title : "Department of HINDI "
+        payload: "/DOHi_P"
+      - title : "Department of Sanskrit "
+        payload: "/DOSa_P"
+      - title : "Department of Philosophy "
+        payload: "/DOPh_P"
+      - title : "Department of Physical education and sports"
+        payload: "/DOPES_P"
+      - title : "Center of Foreign language"
+        payload: "/COFL_P"
+      - title : "Department of Anthropology"
+        payload: "/DOA_P"
+      - title : "Department of Sociology"
+        payload: "/DOSo_P"
+      - title : "Department of History"
+        payload: "/DOH_P"
+      - title : "Department of Politics and international studies"
+        payload: "/DOPIS_P"
+      - title : "Department of Social work"
+        payload: "/DOSW_P"
+      - title : "Department of Women's studies"
+        payload: "/DOWS_P"
+      - title : "Center of South Asian studies"
+        payload: "/UMISARC_P"
+      - title : "Center for study of Social exclusion & inclusive policy"
+        payload: "/COSEI_P"
+      - title : "Center for European studies"
+        payload: "/CFES_p"
+      - title : "Center of Marintime studies"
+        payload: "/CFMS_p"
+      - title : "Department of Computer science"
+        payload: "/DOCS_P"
+      - title : "Department of Electronic engineering"
+        payload: "/DOEE_p"
+      - title : "Department of Computer science - Karikal"
+        payload: "/DOCS-k_P"
+      - title : "Center of pollution control and Enviormental engineering"
+        payload: "/COPCE_P"
+      - title : "School of Education"
+        payload: "/SOE_P"
+      - title : "Center for Adult and Continuing Education"
+        payload: "/CFACE_P"
+      - title : "Department of Performing Arts"
+        payload: "/DOPA_P"
+      - title : "School of Law"
+        payload: "/SOL_P"
+      - title : "Department of Library and information science"
+        payload: "/DOLIS_P"
+      - title : "Department of Electronic media and mass communication"
+        payload: "/DOEMMC_P"
+      - title : "Department of Green energy and technology"
+        payload: "/DOGET_P"
+      - title : "Center for Nano science & technology"
+        payload: "/DONST_P"
+      - title : "Human resource devlopment center"
+        payload: "/UGC_P"
+      - title : "Department of Managment studies Port blair campus "
+        payload: "DOM-PB_P"
+      - title : "Laskhadweep campus"
+        payload: "/LC_P"
+
+
+
+  # -------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%------------------------
+
+  # ----------------------------- Sub(UTTER) - COURSES OFFER SECTION (Department/PHD)---------------------
+  utter_response1.2.2.1:
+  - text : "Ph.D. Tamil link is [website] {https://www.pondiuni.edu.in/programs/ph-d-tamil-full-time/}"
+  
+  utter_response1.2.2.2:
+  - text : "M.B.A. Master of Business Administration link is [website] {https://www.pondiuni.edu.in/programs/master-of-business-administration-m-b-a/}"
+  - text : "M.B.A. Part–Time (Self Financing) link is [website] {https://www.pondiuni.edu.in/programs/m-b-a-part-time-self-financing/}"
+  - text : "M.B.A. Data Analytics (Self Financing) link is [website] {https://www.pondiuni.edu.in/programs/m-b-a-data-analytics-self-financing/}"
+
+
+  utter_response1.2.2.3:
+  - text : ""
+
+  utter_response1.2.2.4:
+  - text : ""
+  
+  utter_response1.2.2.5:
+  - text : ""
+
+  utter_response1.2.2.6:
+  - text : ""
+
+  utter_response1.2.2.7:
+  - text : ""
+  
+  utter_response1.2.2.8:
+  - text : ""
+
+  utter_response1.2.2.9:
+  - text : ""
+
+  utter_response1.2.2.10:
+  - text : ""
+
+  utter_response1.2.2.11:
+  - text : ""
+  
+  utter_response1.2.2.12:
+  - text : ""
+
+  utter_response1.2.2.13:
+  - text : ""
+
+  utter_response1.2.2.14:
+  - text : ""
+  
+  utter_response1.2.2.15:
+  - text : ""
+
+  utter_response1.2.2.16:
+  - text : ""
+
+  utter_response1.2.2.17:
+  - text : ""
+
+  utter_response1.2.2.18:
+  - text : ""
+  
+  utter_response1.2.2.19:
+  - text : ""
+
+  utter_response1.2.2.20:
+  - text : ""
+
+  utter_response1.2.2.21:
+  - text : ""
+  
+  utter_response1.2.2.22:
+  - text : ""
+
+  utter_response1.2.2.23:
+  - text : ""
+
+  utter_response1.2.2.24:
+  - text : ""
+
+  utter_response1.2.2.25:
+  - text : ""
+  
+  utter_response1.2.2.26:
+  - text : ""
+
+  utter_response1.2.2.27:
+  - text : ""
+
+  utter_response1.2.2.28:
+  - text : ""
+  
+  utter_response1.2.2.29:
+  - text : ""
+
+  utter_response1.2.2.30:
+  - text : ""
+
+  utter_response1.2.2.31:
+  - text : ""
+
+  utter_response1.2.2.32:
+  - text : ""
+  
+  utter_response1.2.2.33:
+  - text : ""
+
+  utter_response1.2.2.34:
+  - text : ""
+
+  utter_response1.2.2.35:
+  - text : ""
+  
+  utter_response1.2.2.36:
+  - text : ""
+
+  utter_response1.2.2.37:
+  - text : ""
+
+  utter_response1.2.2.38:
+  - text : ""
+
+  utter_response1.2.2.39:
+  - text : ""
+  
+  utter_response1.2.2.40:
+  - text : ""
+
+  utter_response1.2.2.41:
+  - text : ""
+
+  utter_response1.2.2.42:
+  - text : ""
+  
+  utter_response1.2.2.43:
+  - text : ""
+
+  utter_response1.2.2.44:
+  - text : ""
+
+  utter_response1.2.2.45:
+  - text : ""
+
+  utter_response1.2.2.46:
+  - text : ""
+  
+  utter_response1.2.2.47:
+  - text : ""
+
+  utter_response1.2.2.48:
+  - text : ""
+
+  utter_response1.2.2.49:
+  - text : ""
+  
+  utter_response1.2.2.50:
+  - text : ""
+
+  utter_response1.2.2.51:
+  - text : ""
+
+
+  #-------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%----------------------------------
+
+
+  utter_response1.3:
+  - text : "Working days of university"
+
+  utter_response1.4:
+  - text : "Contact details of university website {link}"
+
+  # -------------- MASTER link utter -----------------------------------
+
+  utter_response_MASTER_LINK:
+  - text : "this is Admissin link {link}"
+     
+actions:
+  - action_hello_world
+  - Master_link_admission
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,826 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+# --------------------------------------Main menu section -----------------------------------------
+
+- intent : APPLY
+  examples : |
+    - How to apply ?
+    - How to apply for masters ?
+    - How to apply for PHD ?
+    - How to take admission ?
+    - How to take admission in master ?
+    - How to take admission in phd ?
+    - How to apply for courses ?
+
+- intent : COURSES 
+  examples : |
+   - what are the courses offerd by university ?
+   - what are the courses available ?
+   - How many type of courses are there ?
+   - courses offered by university ?
+
+- intent : OPEN_DAYS
+  examples : |
+   - What are the open days for university ?
+   - what are the working days for university ?
+   - working days of university ?
+   - working days in weak ?
+   - Days in which university is open ?
+
+- intent : CONTACT_US
+  examples : |
+   - How can i contact university ?
+   - how i contact ?
+   - how to contact ?
+   - contact deatils 
+   - how i contact with university office ?
+   - ways to contact office ?
+
+- intent : EVENTS
+  examples : |
+   - What are the events ?
+   - what is new?
+   - events ?
+   - present time events ?
+
+# -----------------------------------$$$$$$$$$$$$$$$$$$$$$$------------------------------------------
+
+
+# -------------------------- How to apply section  -------------------------------------------------
+
+- intent : MASTER_LINK
+  examples : |
+   - How to apply for master courses ?
+   - How to apply for master ?
+   - How to persue for master ?
+   - Master admission ?
+   - Applying for master?
+   - Master courses admission ?
+   - Admission master ? 
+   
+- intent : PHD_LINK
+  examples : |
+   - How to apply for PHD courses ?
+   - How to apply for PHD ?
+   - How to persue for PHD ?
+   - PHD admission ?
+   - Applying for PHD?
+   - PHD courses admission ?
+   - Admission PHD ?
+
+- intent : INTEGRATED_LINK 
+  examples : |
+   - How to apply for Integrated courses ?
+   - How to apply for  Integrated  ?
+   - How to persue for  Integrated  ?
+   - Integrated  admission ?
+   - Applying for  Integrated ?
+   - Integrated  courses admission ?
+   - Admission Integrated  ?
+
+# -----------------------------------$$$$$$$$$$$$$$$$$$$$$$-----------------------------------------
+
+# -----------------------------------COURSES OFFER --------------------------------------------------------
+
+- intent :  MASTER_COURSES
+  examples : |
+   - Type of courses offered ?
+   - Is master course offered ?
+   - master course ?
+   - masters 
+   - pg degree
+   - post graduate degree
+   - type of degrees
+
+- intent :  PHD_COURSES
+  examples : |
+   - Is PHD course offered ?
+   - PHD course ?
+   - PHD 
+   - PHD degree
+  
+
+# -------------------------------%%%%%%%%%%%%%%%%------------------------------------------------
+
+# ------------------------------ Sub - COURSES OFFER SECTION (Department/MASTER)--------------------------
+
+- intent : SBSTL
+  examples : |
+   - Subramania Bharthi school of tamil language & Literature 
+   - department of language and literature
+   - Subramania Bharthi school of tamil language and Literature
+   - subramania bharthi school of tamil language & literature
+
+- intent : DOMS
+  examples : |
+   - Department of Managment studies
+   - department of managment 
+   - department of managment studies
+
+- intent : DOC
+  examples : |
+   - Department of Commerce 
+   - commerce department
+   - department of commerce
+
+- intent : DOEC
+  examples : |
+   - Department of Economics
+   - economics department
+   - department of economics
+
+- intent : DOTS
+  examples : |
+   - Department of Tourism studies
+   - tourism department
+   - department of tourism studies
+
+- intent : DOBT
+  examples : |
+   - Department of Banking technology
+   - banking technology department
+   - department of banking technology
+
+- intent : DOIS
+  examples : |
+   - Department of International studies
+   - international studies department
+   - department of international studies
+
+- intent : DOMS-K
+  examples : |
+   - Department of Managment studies - Karikal
+   - managment studies karikal
+   - Department of Managment studies  Karikal
+   - department of managment studies  karikal
+
+- intent : DOC-K
+  examples : |
+   - Department of Commerce - Karikal
+   - commerce department karikal
+   - Department of Commerce Karikal
+   - department of commerce karikal
+
+- intent : DOM
+  examples : |
+   - Department of Mathematics
+   - mathematics department 
+   - department of mathematics
+
+- intent : DOS
+  examples : |
+   - Deparment of Statistics
+   - statistics department
+   - deparment of statistics
+
+- intent : ECACS
+  examples : |
+   - Escande chair in Asian christian studies 
+   - christian studies department
+   - escande department 
+   - escande chair in asian christian studies
+   - Escande chair in asian christian studies 
+
+- intent : DOP
+  examples : |
+   - Department of Physics
+   - physics department 
+   - department of physics
+   
+- intent : DOCH
+  examples : |
+   - Department of Chemistry
+   - chemistry department
+   - department of chemistry
+
+- intent : DOES
+  examples : |
+   - Department of Earth science
+   - earth science department 
+   - department of earth science
+   
+- intent : DOAP
+  examples : |
+   - Department of Applied psychology
+   - psychology department 
+   - applied psychology
+   - department of applied psychology
+   - Department of Applied psychology
+
+- intent : DOCDM
+  examples : |
+   - Department of Costal disaster managment
+   - department of costal disaster managment
+   - coastal disaster managment 
+
+- intent : DOBMB
+  examples : |
+   - Department of Bioshemistry and molecular biology
+   - biochemistry and molecular biology
+   - department of bioshemistry and molecular biology
+
+- intent : DOB
+  examples : |
+   - Department of Biotechnology
+   - biotechnology department
+   - department of biotechnology
+
+- intent : DOEn
+  examples : |
+   - Department of English
+   - english department 
+   - department of english
+
+- intent : DOF
+  examples : |
+   - Department of French
+   - french department
+   - department of french
+
+- intent : DOHi
+  examples : |
+   - Department of Hindi
+   - hindi department
+   - department of hindi
+
+- intent : DOSa
+  examples : |
+   - Department of Sanskrit 
+   - sanskrit department 
+   - department of sanskrit
+
+- intent : DOPh
+  examples : |
+   - Department of Philosophy
+   - philosphy department
+   - department of philosophy
+
+- intent : DOPES
+  examples : |
+   - Department of Physical education and sports
+   - physical education and sports department
+   - department of physical education and sports
+
+- intent : COFL
+  examples : |
+   - Center of Foreign language
+   - foreign language department
+   - center of foreign language
+
+- intent : DOA
+  examples : |
+   - Department of Anthropology
+   - anthropology department
+   - department of anthropology
+
+- intent : DOSo
+  examples : |
+   - Department of Sociology
+   - sociology department
+   - department of sociology
+  
+- intent : DOH
+  examples : |
+   - Department of History
+   - history department
+   - department of history
+
+- intent : DOPIS
+  examples : |
+   - Department of Politics and international studies
+   - political and international studies
+   - department of politics and international studies
+
+- intent : DOSW
+  examples : |
+   - Department of Social work
+   - social work department 
+   - department of social work
+
+- intent : DOWS
+  examples : |
+   - Department of Women's studies
+   - women studies department 
+   - women's studies department 
+   - department of women's studies
+
+- intent : UMISARC
+  examples : |
+   - Center of South Asian studies
+   - south asian center
+   - south asian studies center 
+   - center of South asian studies
+
+- intent : COSEI
+  examples : |
+   - Center for study of Social exclusion & inclusive policy
+   - social exclusion and inclusion policy department 
+   - center for study of social exclusion & inclusive policy
+
+- intent : CFES
+  examples : |
+   - Center for European studies
+   - europen sudies center 
+   - center for european studies
+
+- intent : CFMS
+  examples : |
+   - Center of Marintime studies
+   - marintime studies center
+   - center of marintime studies
+
+- intent : DOEE
+  examples : |
+   - Department of Electronic engineering
+   - electronic engineering department 
+   - department of electronic engineering
+
+- intent : DOCS-k
+  examples : |
+   - Department of Computer science - Karikal
+   - computer science department karikal
+   - Department of Computer science  Karikal
+   - department of computer science  karikal
+
+- intent : COPCE
+  examples : |
+   - Center of pollution control and Enviormental engineering
+   - pollution control department 
+   - enviormental engineering department
+   - center of pollution control and enviormental engineering
+
+- intent : SOE
+  examples : |
+   - School of Education
+   - education department 
+   - school of education
+
+- intent : CFACE
+  examples : |
+   - Center for Adult and Continuing Education
+   - adult and continuing education
+   - center for adult and continuing education
+   - adult education 
+
+- intent : DOPA
+  examples : |
+   - Department of Performing Arts
+   - performing arts department 
+   - department of performing arts
+   
+- intent : SOL
+  examples : |
+   - School of Law
+   - law school
+   - school of law
+
+- intent : DOLIS
+  examples : |
+   - Department of Library and information science
+   - library and information science 
+   - department of library and information science
+   - library department 
+   - information department 
+
+- intent : DOEMMC
+  examples : |
+   - Department of Electronic media and mass communication
+   - electronic media and mass communication
+   - department of electronic media and mass communication
+   - electronic media department 
+   - mass communication department 
+
+- intent : DOGET
+  examples : |
+   - Department of Green energy and technology
+   - green energy department 
+   - green enerfy technology department 
+   - department of green energy and technology
+
+- intent : DONST
+  examples : |
+   - Center for Nano science & technology
+   - nano science department 
+   - center for nano science & technology
+
+- intent : UGC
+  examples : |
+   - Human resource devlopment center
+   - human resource department 
+   - human resource devlopment center
+
+- intent : DOM-PB
+  examples : |
+   - Department of Managment studies Port blair campus
+   - managment department port blair
+   - department of managment studies port blair campus
+
+- intent : LC
+  examples : |
+   - Laskhadweep campus
+
+
+# -------------------------------%%%%%%%%%%%%%%%%------------------------------------------------------
+
+# ------------------------------ Sub - COURSES OFFER SECTION (Department/PHD)--------------------------
+
+- intent : SBSTL_P
+  examples : |
+   - Subramania Bharthi school of tamil language & Literature 
+   - department of language and literature
+   - Subramania Bharthi school of tamil language and Literature
+   - subramania bharthi school of tamil language & literature
+
+- intent : DOMS_P
+  examples : |
+   - Department of Managment studies
+   - department of managment 
+   - department of managment studies
+
+- intent : DOC_P
+  examples : |
+   - Department of Commerce 
+   - commerce department
+   - department of commerce
+
+- intent : DOEC_P
+  examples : |
+   - Department of Economics
+   - economics department
+   - department of economics
+
+- intent : DOTS_P
+  examples : |
+   - Department of Tourism studies
+   - tourism department
+   - department of tourism studies
+
+- intent : DOBT_P
+  examples : |
+   - Department of Banking technology
+   - banking technology department
+   - department of banking technology
+
+- intent : DOIS_P
+  examples : |
+   - Department of International studies
+   - international studies department
+   - department of international studies
+
+- intent : DOMS-K_P
+  examples : |
+   - Department of Managment studies - Karikal
+   - managment studies karikal
+   - Department of Managment studies  Karikal
+   - department of managment studies  karikal
+
+- intent : DOC-K_P
+  examples : |
+   - Department of Commerce - Karikal
+   - commerce department karikal
+   - Department of Commerce Karikal
+   - department of commerce karikal
+
+- intent : DOM_P
+  examples : |
+   - Department of Mathematics
+   - mathematics department 
+   - department of mathematics
+
+- intent : DOS_P
+  examples : |
+   - Deparment of Statistics
+   - statistics department
+   - deparment of statistics
+
+- intent : ECACS_P
+  examples : |
+   - Escande chair in Asian christian studies 
+   - christian studies department
+   - escande department 
+   - escande chair in asian christian studies
+   - Escande chair in asian christian studies 
+
+- intent : DOP_P
+  examples : |
+   - Department of Physics
+   - physics department 
+   - department of physics
+   
+- intent : DOCH_P
+  examples : |
+   - Department of Chemistry
+   - chemistry department
+   - department of chemistry
+
+- intent : DOES_P
+  examples : |
+   - Department of Earth science
+   - earth science department 
+   - department of earth science
+   
+- intent : DOAP_P
+  examples : |
+   - Department of Applied psychology
+   - psychology department 
+   - applied psychology
+   - department of applied psychology
+   - Department of Applied psychology
+
+- intent : DOCDM_P
+  examples : |
+   - Department of Costal disaster managment
+   - department of costal disaster managment
+   - coastal disaster managment 
+
+- intent : DOBMB_P
+  examples : |
+   - Department of Bioshemistry and molecular biology
+   - biochemistry and molecular biology
+   - department of bioshemistry and molecular biology
+
+- intent : DOB_P
+  examples : |
+   - Department of Biotechnology
+   - biotechnology department
+   - department of biotechnology
+
+- intent : DOEn_P
+  examples : |
+   - Department of English
+   - english department 
+   - department of english
+
+- intent : DOF_P
+  examples : |
+   - Department of French
+   - french department
+   - department of french
+
+- intent : DOHi_P
+  examples : |
+   - Department of Hindi
+   - hindi department
+   - department of hindi
+
+- intent : DOSa_P
+  examples : |
+   - Department of Sanskrit 
+   - sanskrit department 
+   - department of sanskrit
+
+- intent : DOPh_P
+  examples : |
+   - Department of Philosophy
+   - philosphy department
+   - department of philosophy
+
+- intent : DOPES_P
+  examples : |
+   - Department of Physical education and sports
+   - physical education and sports department
+   - department of physical education and sports
+
+- intent : COFL_P
+  examples : |
+   - Center of Foreign language
+   - foreign language department
+   - center of foreign language
+
+- intent : DOA_P
+  examples : |
+   - Department of Anthropology
+   - anthropology department
+   - department of anthropology
+
+- intent : DOSo_P
+  examples : |
+   - Department of Sociology
+   - sociology department
+   - department of sociology
+  
+- intent : DOH_P
+  examples : |
+   - Department of History
+   - history department
+   - department of history
+
+- intent : DOPIS_P
+  examples : |
+   - Department of Politics and international studies
+   - political and international studies
+   - department of politics and international studies
+
+- intent : DOSW_P
+  examples : |
+   - Department of Social work
+   - social work department 
+   - department of social work
+
+- intent : DOWS_P
+  examples : |
+   - Department of Women's studies
+   - women studies department 
+   - women's studies department 
+   - department of women's studies
+
+- intent : UMISARC_P
+  examples : |
+   - Center of South Asian studies
+   - south asian center
+   - south asian studies center 
+   - center of South asian studies
+
+- intent : COSEI_P
+  examples : |
+   - Center for study of Social exclusion & inclusive policy
+   - social exclusion and inclusion policy department 
+   - center for study of social exclusion & inclusive policy
+
+- intent : CFES_P
+  examples : |
+   - Center for European studies
+   - europen sudies center 
+   - center for european studies
+
+- intent : CFMS_P
+  examples : |
+   - Center of Marintime studies
+   - marintime studies center
+   - center of marintime studies
+
+- intent : DOEE_P
+  examples : |
+   - Department of Electronic engineering
+   - electronic engineering department 
+   - department of electronic engineering
+
+- intent : DOCS-k_P
+  examples : |
+   - Department of Computer science - Karikal
+   - computer science department karikal
+   - Department of Computer science  Karikal
+   - department of computer science  karikal
+
+- intent : COPCE_P
+  examples : |
+   - Center of pollution control and Enviormental engineering
+   - pollution control department 
+   - enviormental engineering department
+   - center of pollution control and enviormental engineering
+
+- intent : SOE_P
+  examples : |
+   - School of Education
+   - education department 
+   - school of education
+
+- intent : CFACE_P
+  examples : |
+   - Center for Adult and Continuing Education
+   - adult and continuing education
+   - center for adult and continuing education
+   - adult education 
+
+- intent : DOPA_P
+  examples : |
+   - Department of Performing Arts
+   - performing arts department 
+   - department of performing arts
+   
+- intent : SOL_P
+  examples : |
+   - School of Law
+   - law school
+   - school of law
+
+- intent : DOLIS_P
+  examples : |
+   - Department of Library and information science
+   - library and information science 
+   - department of library and information science
+   - library department 
+   - information department 
+
+- intent : DOEMMC_P
+  examples : |
+   - Department of Electronic media and mass communication
+   - electronic media and mass communication
+   - department of electronic media and mass communication
+   - electronic media department 
+   - mass communication department 
+
+- intent : DOGET_P
+  examples : |
+   - Department of Green energy and technology
+   - green energy department 
+   - green enerfy technology department 
+   - department of green energy and technology
+
+- intent : DONST_P
+  examples : |
+   - Center for Nano science & technology
+   - nano science department 
+   - center for nano science & technology
+
+- intent : UGC_P
+  examples : |
+   - Human resource devlopment center
+   - human resource department 
+   - human resource devlopment center
+
+- intent : DOM-PB_P
+  examples : |
+   - Department of Managment studies Port blair campus
+   - managment department port blair
+   - department of managment studies port blair campus
+
+- intent : LC_P
+  examples : |
+   - Laskhadweep campus
+
+
+# -------------------------------%%%%%%%%%%%%%%%%------------------------------------------------------

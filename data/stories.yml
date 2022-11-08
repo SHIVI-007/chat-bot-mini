@@ -1,0 +1,1230 @@
+version: "3.1"
+
+stories:
+
+# ------------------------How to apply section -------------------------------------------
+
+- story: path1.1
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: APPLY
+  - action: utter_response1.1
+  - intent: MASTER_LINK
+  # - action: Master_link_admission
+
+- story: path1.2
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: APPLY
+  - action: utter_response1.1
+  - intent: PHD_LINK
+  # - action: Master_link_admission
+
+- story: path1.3
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: APPLY
+  - action: utter_response1.1
+  - intent: INTEGRATED_LINK 
+  # - action: Master_link_admission
+
+# ------------------------------------%%%%%%%%%%%%%%%%%%%%%%%-----------------------------------
+
+
+#-----------------------------------Courses offered section (MASTER) -----------------------------------
+
+- story: path2.1.1
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: SBSTL
+  - action: utter_response1.2.1.1
+
+- story: path2.1.2
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOMS
+  - action: utter_response1.2.1.2
+
+- story: path2.1.3
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOC
+  - action: utter_response1.2.1.3
+
+- story: path2.1.4
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOEC
+  - action: utter_response1.2.1.4
+
+- story: path2.1.5
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOTS
+  - action: utter_response1.2.1.5
+
+- story: path2.1.6
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOBT
+  - action: utter_response1.2.1.6
+
+- story: path2.1.7
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOIS
+  - action: utter_response1.2.1.7
+
+- story: path2.1.8
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOMS-K
+  - action: utter_response1.2.1.8
+
+- story: path2.1.9
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOC-K
+  - action: utter_response1.2.1.9
+
+- story: path2.1.10
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOM
+  - action: utter_response1.2.1.10
+
+- story: path2.1.11
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOS
+  - action: utter_response1.2.1.11
+
+
+- story: path2.1.12
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: ECACS
+  - action: utter_response1.2.1.12
+
+- story: path2.1.13
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOP
+  - action: utter_response1.2.1.13
+
+- story: path2.1.14
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOCH
+  - action: utter_response1.2.1.14
+
+- story: path2.1.15
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOES
+  - action: utter_response1.2.1.15
+ 
+- story: path2.1.16
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOAP
+  - action: utter_response1.2.1.16
+
+- story: path2.1.17
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOCDM
+  - action: utter_response1.2.1.17
+
+- story: path2.1.18
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOBMB
+  - action: utter_response1.2.1.18
+
+- story: path2.1.19
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOB
+  - action: utter_response1.2.1.19
+
+- story: path2.1.20
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOEn
+  - action: utter_response1.2.1.20
+
+- story: path2.1.21
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOF
+  - action: utter_response1.2.1.21
+
+- story: path2.1.22
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOH
+  - action: utter_response1.2.1.22
+
+- story: path2.1.23
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOSa
+  - action: utter_response1.2.1.23
+
+- story: path2.1.24
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOPh
+  - action: utter_response1.2.1.24
+
+
+- story: path2.1.25
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOPES
+  - action: utter_response1.2.1.25
+
+- story: path2.1.26
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOFL
+  - action: utter_response1.2.1.26
+
+- story: path2.1.27
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOA
+  - action: utter_response1.2.1.27
+
+- story: path2.1.28
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOSo
+  - action: utter_response1.2.1.28
+
+- story: path2.1.29
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOHi
+  - action: utter_response1.2.1.29
+
+- story: path2.1.30
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOPIS
+  - action: utter_response1.2.1.30
+
+- story: path2.1.31
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOSW
+  - action: utter_response1.2.1.31
+
+- story: path2.1.32
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOWS
+  - action: utter_response1.2.1.32
+
+- story: path2.1.33
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: UMISARC
+  - action: utter_response1.2.1.33
+
+- story: path2.1.34
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: COSEI
+  - action: utter_response1.2.1.34
+
+- story: path2.1.35
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: CFES
+  - action: utter_response1.2.1.35
+
+- story: path2.1.36
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: CFMS
+  - action: utter_response1.2.1.36
+
+- story: path2.1.37
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOCS
+  - action: utter_response1.2.1.37
+
+
+- story: path2.1.38
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOEE
+  - action: utter_response1.2.1.28
+
+- story: path2.1.39
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOCS-K
+  - action: utter_response1.2.1.39
+
+- story: path2.1.40
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: COPCE
+  - action: utter_response1.2.1.40
+
+- story: path2.1.41
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: SOE
+  - action: utter_response1.2.1.41
+
+- story: path2.1.42
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: CFACE
+  - action: utter_response1.2.1.42
+
+- story: path2.1.43
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOPA
+  - action: utter_response1.2.1.43
+
+- story: path2.1.44
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: SOL
+  - action: utter_response1.2.1.44
+
+- story: path2.1.45
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOLIS
+  - action: utter_response1.2.1.45
+
+
+- story: path2.1.46
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOEMMC
+  - action: utter_response1.2.1.46
+
+
+- story: path2.1.47
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOGET
+  - action: utter_response1.2.1.47
+
+
+- story: path2.1.48
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DONST
+  - action: utter_response1.2.1.48
+
+
+- story: path2.1.49
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: UGC
+  - action: utter_response1.2.1.49
+
+- story: path2.1.50
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: DOM-PB
+  - action: utter_response1.2.1.50
+
+- story: path2.1.51
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: MASTER_COURSES
+  - action: utter_response1.2.1
+  - intent: LC
+  - action: utter_response1.2.1.51
+
+
+# -----------------------------------%%%%%%%%%%%%%%%%%%%%-------------------------------------------------
+
+#-----------------------------------Courses offered section (PHD) -----------------------------------
+
+- story: path2.2.1
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: SBSTL_P
+  - action: utter_response1.2.2.1
+
+- story: path2.2.2
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOMS_P
+  - action: utter_response1.2.2.2
+
+- story: path2.2.3
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOC_P
+  - action: utter_response1.2.2.3
+
+- story: path2.2.4
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOEC_P
+  - action: utter_response1.2.2.4
+
+- story: path2.2.5
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOTS_P
+  - action: utter_response1.2.2.5
+
+- story: path2.2.6
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOBT_P
+  - action: utter_response1.2.2.6
+
+- story: path2.2.7
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOIS_P
+  - action: utter_response1.2.2.7
+
+- story: path2.2.8
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOMS-K_P
+  - action: utter_response1.2.2.8
+
+- story: path2.2.9
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOC-K_P
+  - action: utter_response1.2.2.9
+
+- story: path2.2.10
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOM_P
+  - action: utter_response1.2.2.10
+
+- story: path2.2.11
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOS_P
+  - action: utter_response1.2.2.11
+
+
+- story: path2.2.12
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: ECACS_P
+  - action: utter_response1.2.2.12
+
+- story: path2.2.13
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOP_P
+  - action: utter_response1.2.2.13
+
+- story: path2.2.14
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOCH_P
+  - action: utter_response1.2.2.14
+
+- story: path2.2.15
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOES_P
+  - action: utter_response1.2.2.15
+ 
+- story: path2.2.16
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOAP_P
+  - action: utter_response1.2.2.16
+
+- story: path2.2.17
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOCDM_P
+  - action: utter_response1.2.2.17
+
+- story: path2.2.18
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOBMB_P
+  - action: utter_response1.2.2.18
+
+- story: path2.2.19
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOB_P
+  - action: utter_response1.2.2.19
+
+- story: path2.2.20
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOEn_P
+  - action: utter_response1.2.2.20
+
+- story: path2.2.21
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOF_P
+  - action: utter_response1.2.2.21
+
+- story: path2.2.22
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOH_P
+  - action: utter_response1.2.2.22
+
+- story: path2.2.23
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOSa_P
+  - action: utter_response1.2.2.23
+
+- story: path2.2.24
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOPh_P
+  - action: utter_response1.2.2.24
+
+
+- story: path2.2.25
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOPES_P
+  - action: utter_response1.2.2.25
+
+- story: path2.2.26
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOFL_P
+  - action: utter_response1.2.2.26
+
+- story: path2.2.27
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOA_P
+  - action: utter_response1.2.2.27
+
+- story: path2.2.28
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOSo_P
+  - action: utter_response1.2.2.28
+
+- story: path2.2.29
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOHi_P
+  - action: utter_response1.2.2.29
+
+- story: path2.2.30
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOPIS_P
+  - action: utter_response1.2.2.30
+
+- story: path2.2.31
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOSW_P
+  - action: utter_response1.2.2.31
+
+- story: path2.2.32
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOWS_P
+  - action: utter_response1.2.2.32
+
+- story: path2.2.33
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: UMISARC_P
+  - action: utter_response1.2.2.33
+
+- story: path2.2.34
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: COSEI_P
+  - action: utter_response1.2.2.34
+
+- story: path2.2.35
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: CFES_P
+  - action: utter_response1.2.2.35
+
+- story: path2.2.36
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: CFMS_P
+  - action: utter_response1.2.2.36
+
+- story: path2.2.37
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOCS_P
+  - action: utter_response1.2.2.37
+
+
+- story: path2.2.38
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOEE_P
+  - action: utter_response1.2.2.28
+
+- story: path2.2.39
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOCS-K_P
+  - action: utter_response1.2.2.39
+
+- story: path2.2.40
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: COPCE_P
+  - action: utter_response1.2.2.40
+
+- story: path2.2.41
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: SOE_P
+  - action: utter_response1.2.2.41
+
+- story: path2.2.42
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: CFACE_P
+  - action: utter_response1.2.2.42
+
+- story: path2.2.43
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOPA_P
+  - action: utter_response1.2.2.43
+
+- story: path2.2.44
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: SOL_P
+  - action: utter_response1.2.2.44
+
+- story: path2.2.45
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOLIS_P
+  - action: utter_response1.2.2.45
+
+
+- story: path2.2.46
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOEMMC_P
+  - action: utter_response1.2.2.46
+
+
+- story: path2.2.47
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOGET_P
+  - action: utter_response1.2.2.47
+
+
+- story: path2.2.48
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DONST_P
+  - action: utter_response1.2.2.48
+
+
+- story: path2.2.49
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: UGC_P
+  - action: utter_response1.2.2.49
+
+- story: path2.2.50
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: DOM-PB_P
+  - action: utter_response1.2.2.50
+
+- story: path2.2.51
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+  - intent: LC_P
+  - action: utter_response1.2.2.51
+
+
+# -----------------------------------%%%%%%%%%%%%%%%%%%%%-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# -------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------------------------
+- story: path2.2
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: COURSES 
+  - action: utter_response1.2
+  - intent: PHD_COURSES
+  - action: utter_response1.2.2
+
+# ------------------------------------------------%%%%%%%%%%%%%%%%%%%%--------------------------------------
+
+- story: path3
+  steps: 
+  - intent: greet
+  - action: utter_response1
+  - intent: OPEN_DAYS
+  - action: utter_response1.3
+
+- story: path4
+  steps: 
+  - intent: greet
+  - action: utter_response1
+  - intent: CONTACT_US
+  - action: action_hello_world
+   
+- story: path5
+  steps:
+  - intent: greet
+  - action: utter_response1
+  - intent: EVENTS
+  - action: action_hello_world
+   
